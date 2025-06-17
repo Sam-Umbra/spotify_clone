@@ -1,0 +1,41 @@
+.top {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrows {
+  display: flex;
+  gap: 22px;
+}
+
+.arrow {
+  color: var(--secundary-color);
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  color: var(--secundary-color);
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 5px 10px 5px 5px;
+}
+
+.user_photo {
+  padding: 5px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.user > span {
+  font-size: 1.125rem;
+}

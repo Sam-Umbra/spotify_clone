@@ -51,10 +51,16 @@ export default function LeftAside() {
         </div>
       </div>
       <ul className={style.mixes}>
-        {mixList.map((mix:string) => (
+        {mixList.map((mix: string) => (
           <li key={mix}>{mix}</li>
         ))}
       </ul>
+      <picture>
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e0260df033c8f8b17384387666a"
+          alt=""
+        />
+      </picture>
     </aside>
   );
 }

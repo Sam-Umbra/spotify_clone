@@ -48,8 +48,8 @@ body {
 
 @font-face {
   font-family: "CircularStd";
-  src: url("/circular-std-font-family/CircularStd-BoldItalic.woff")
+  src: url("/circular-std-font-family/CircularStd-Book.woff")
     format("woff");
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 300;
+  font-style: normal;
 }

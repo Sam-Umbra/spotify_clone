@@ -1,0 +1,40 @@
+.mix_retangle {
+  display: flex;
+  height: 82px;
+  width: 480px;
+  border-radius: 6px;
+  overflow: hidden;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.album_container {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+  width: 82px;
+  overflow: hidden;
+  border-bottom: 2px solid yellow;
+}
+
+.album_cover {
+  width: 100%;
+  height: 100%;
+}
+
+.album_caption {
+  color: var(--secundary-color);
+  font-size: 0.5rem;
+  position: absolute;
+  align-self: flex-end;
+  padding: 0px 0px 5px 2px;
+  border-left: 2px solid yellow;
+  height: 0.2rem;
+  margin-bottom: 5px;
+}
+
+.album_name {
+    color: var(--secundary-color);
+    margin-left: 20px;
+    font-size: 1.25rem;
+}
