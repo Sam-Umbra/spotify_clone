@@ -1,0 +1,66 @@
+.song_retangle {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+  grid-template-rows: 72px;
+  color: var(--terciary-color);
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.id {
+  font-size: 1.375rem;
+}
+
+.figure {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 300;
+  color: #65d36e;
+  font-size: 1.25rem;
+}
+
+.singer {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.album {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.date {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.time {
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: var(--secundary-color);
+}

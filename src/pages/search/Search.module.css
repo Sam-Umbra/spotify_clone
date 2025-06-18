@@ -1,0 +1,143 @@
+.search {
+  display: grid;
+  grid-template-rows: 1fr 112px;
+  grid-template-columns: 310px 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-rows: 80px 370px 340px 1fr;
+  grid-template-columns: 1fr;
+  padding: 40px;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.recent {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.card_list {
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 224px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(31, 31, 31);
+  border-radius: 8px;
+}
+
+.card_photo_container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 182px;
+  width: 182px;
+  margin-top: 24px;
+}
+
+.card_photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.close_card {
+  position: absolute;
+  color: var(--secundary-color);
+  align-self: flex-start;
+  font-size: 1.5rem;
+}
+
+.card_name {
+  margin-top: 25px;
+  align-self: flex-start;
+  margin-left: 21px;
+  color: var(--secundary-color);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.card_type {
+  margin-left: 21px;
+  align-self: flex-start;
+  color: var(--terciary-color);
+  font-weight: 300;
+}
+
+.top_genres {
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  overflow: hidden;
+}
+
+.t_genre_list {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    gap: 30px;
+}
+
+.t_genre {
+    height: 230px;
+    width: 494px;
+    padding: 20px;
+    background-color: #876AA7;
+    border-radius: 10px;
+}
+
+.t_genre_name {
+    color: var(--secundary-color);
+    font-size: 3rem;
+}
+
+.all {
+  grid-area: 4 / 1 / 5 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.genre_list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 30px;
+}
+
+.genre {
+    height: 220px;
+    width: 220px;
+    padding: 20px;
+    background-color: #27856A;
+    border-radius: 10px;
+}
+
+.genre_name {
+    color: var(--secundary-color);
+    font-size: 1.85rem;
+}
+
+.title {
+  color: var(--secundary-color);
+  font-size: 1.5rem;
+}
