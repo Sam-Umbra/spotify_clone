@@ -4,6 +4,7 @@ import PlayingSong from "../../layout/playingSong/PlayingSong";
 import { useEffect, useState } from "react";
 import Top from "../../layout/Top/Top";
 import MixRetangle from "../../components/MixRetangle/MixRetangle";
+import MixBlock from "../../components/MixBlock/MixBlock";
 
 export default function Home() {
   const [timeText, setTimeText] = useState<string>("");
@@ -29,7 +30,7 @@ export default function Home() {
       <main className={style.main}>
         <Top />
         <div className={style.mixes}>
-          <span>{timeText}</span>
+          <span className={style.time_text}>{timeText}</span>
           <div className={style.mixes_container}>
             <MixRetangle />
             <MixRetangle />
@@ -39,7 +40,32 @@ export default function Home() {
             <MixRetangle />
           </div>
         </div>
-        <div className={style.mixesCategory}></div>
+        <div className={style.mixesCategory}>
+          <div className={style.category}>
+            <div className={style.top}>
+              <span className={style.category_name}>Your top mixes</span>
+              <button className={style.category_btn}>SEE ALL</button>
+            </div>
+            <div className={style.category_container}>
+              <MixBlock />
+              <MixBlock />
+              <MixBlock />
+              <MixBlock />
+            </div>
+          </div>
+          <div className={style.category}>
+            <div className={style.top}>
+              <span className={style.category_name}>Recently played</span>
+              <button className={style.category_btn}>SEE ALL</button>
+            </div>
+            <div className={style.category_container}>
+              <MixBlock />
+              <MixBlock />
+              <MixBlock />
+              <MixBlock />
+            </div>
+          </div>
+        </div>
       </main>
       <PlayingSong />
     </div>
